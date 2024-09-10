@@ -8,12 +8,10 @@ const LoginPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Test user credentials
     const testEmail = 'bob.alatoo.com';
     const testPassword = '333444';
 
     if (email === testEmail && password === testPassword) {
-      // Set isLoggedIn to true and navigate to the main page
       localStorage.setItem('isLoggedIn', 'true');
       navigate('/');
     } else {

@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-900 text-white py-6 mt-8">
+    <footer className="bg-blue-900 text-white py-6">
       <div className="container mx-auto text-center">
         <div className="flex justify-center space-x-6 mb-4">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">

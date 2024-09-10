@@ -18,7 +18,7 @@ const EventsPage: React.FC = () => {
       name: 'Win in Casino Competition',
       location: 'Casino Royale',
       date: '2024-10-05',
-      image: 'https://via.placeholder.com/150', // Example image URL for the event
+      image: 'https://via.placeholder.com/150',
     },
     {
       name: 'Worst Student of the Century',
@@ -57,11 +57,11 @@ const EventsPage: React.FC = () => {
   };
 
   const saveEvent = () => {
-    if (newEvent.name && newEvent.location && newEvent.date) {
+    if (newEvent.name || newEvent.location || newEvent.date) {
       setEvents([...events, newEvent]);
-      setNewEvent({ name: '', location: '', date: '', image: '' }); // Clear the form
+      setNewEvent({ name: '', location: '', date: '', image: '' }); 
     } else {
-      alert('Please fill out all fields');
+      alert('Please fill at least one of the fields: Name, Location, or Date');
     }
   };
 
@@ -139,3 +139,4 @@ const EventsPage: React.FC = () => {
 };
 
 export default EventsPage;
+

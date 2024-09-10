@@ -7,7 +7,6 @@ const MainLayout: React.FC = () => {
   const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
   const navigate = useNavigate();
 
-  // Redirect to login if not logged in
   React.useEffect(() => {
     if (!isLoggedIn) {
       navigate('/login');

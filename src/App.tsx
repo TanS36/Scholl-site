@@ -9,6 +9,7 @@ import MainLayout from './components/MainLayout';
 import TeachersPage from './components/TeachersPage';
 import GuidesPage from './components/GuidesPage';
 import NotFoundPage from './components/NotFoundPage';
+import HelpPage from './components/HelpPage'; 
 import MainPage from './components/Mainpage'; 
 import LoginPage from './components/auth/LoginPage';
 import ProfilePage from './components/auth/ProfilePage';
@@ -44,6 +45,7 @@ const App: React.FC = () => {
           <Route path="schedule" element={<SchedulePage />} />
           <Route path="teachers" element={<TeachersPage />} />
           <Route path="guides" element={<GuidesPage />} />
+          <Route path="help" element={<HelpPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

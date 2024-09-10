@@ -1,0 +1,46 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #1e3a8a
+  color: white
+  padding: 1rem
+  position: relative
+
+.nav
+  display: flex
+  gap: 1.5rem
+  justify-content: center
+  align-items: center
+
+.profileButton
+  display: flex
+
+.burger
+  display: none
+  background: none
+  color: white
+  font-size: 1.5rem
+  border: none
+  cursor: pointer
+
+@media (max-width: 600px)
+  .nav
+    display: none
+    flex-direction: column
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    background-color: #1e3a8a
+    padding: 1rem
+    gap: 1rem
+
+  .nav.open
+    display: flex
+
+  .burger
+    display: block
+
+  .profileButton
+    display: none
