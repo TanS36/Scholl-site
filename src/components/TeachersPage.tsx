@@ -9,7 +9,7 @@ interface Teacher {
 }
 
 const TeachersPage: React.FC = () => {
-  const [teachers, setTeachers] = useState<Teacher[]>([
+  const [teachers] = useState<Teacher[]>([
     {
       name: 'John Doe',
       department: 'Mathematics',
@@ -31,7 +31,6 @@ const TeachersPage: React.FC = () => {
       email: 'michaelbrown@college.edu',
       phone: '+112233445',
     },
-
   ]);
 
   return (
@@ -44,8 +43,12 @@ const TeachersPage: React.FC = () => {
               <h3 className="text-xl font-semibold text-blue-900">{teacher.name}</h3>
               <p className="text-blue-700">Department: {teacher.department}</p>
               <p className="text-blue-700">Office: {teacher.office}</p>
-              <p className="text-blue-700">Email: <a href={`mailto:${teacher.email}`} className="text-blue-500 underline">{teacher.email}</a></p>
-              <p className="text-blue-700">Phone: <a href={`tel:${teacher.phone}`} className="text-blue-500 underline">{teacher.phone}</a></p>
+              <p className="text-blue-700">
+                Email: <a href={`mailto:${teacher.email}`} className="text-blue-500 underline">{teacher.email}</a>
+              </p>
+              <p className="text-blue-700">
+                Phone: <a href={`tel:${teacher.phone}`} className="text-blue-500 underline">{teacher.phone}</a>
+              </p>
             </li>
           ))}
         </ul>
@@ -55,3 +58,4 @@ const TeachersPage: React.FC = () => {
 };
 
 export default TeachersPage;
+

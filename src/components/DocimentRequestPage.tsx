@@ -7,7 +7,7 @@ interface DocumentRequest {
 }
 
 const RequestDocumentsPage: React.FC = () => {
-  const [documentRequests, setDocumentRequests] = useState<DocumentRequest[]>([
+  const [documentRequests] = useState<DocumentRequest[]>([
     { id: 1, documentName: 'Transcript', status: 'In Review' },
     { id: 2, documentName: 'Enrollment Certificate', status: 'Ready' },
     { id: 3, documentName: 'Graduation Certificate', status: 'Denied' },
@@ -45,4 +45,5 @@ const RequestDocumentsPage: React.FC = () => {
 };
 
 export default RequestDocumentsPage;
+
 
